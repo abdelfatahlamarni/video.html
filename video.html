@@ -2,20 +2,49 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Video</title>
+  <title>شاهد الفيديو</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #111;
+      color: #fff;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .box {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    iframe {
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
-<body style="text-align:center; background:black; color:white;">
+<body>
 
-<h2>فيديو حصري 🔥</h2>
-<p>أكمل خطوة بسيطة لفتح الفيديو</p>
+<div class="container">
+  <div class="box">
+    <h2>🔥 فيديو حصري</h2>
+    <p>قم بخطوة بسيطة لفتح الفيديو</p>
 
-<!-- الفيديو (مخبي) -->
-<div id="video" style="display:none;">
-  <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/VIDEO_ID"
-  frameborder="0" allowfullscreen>
-  </iframe>
+    <!-- الفيديو مخبي -->
+    <div id="video" style="display:none;">
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 </div>
 
 <!-- OGAds Locker -->
@@ -24,7 +53,7 @@
   _ogads.push(['lock', 'YOUR_LOCKER_ID']);
 </script>
 
-<script src="https://ogads.com/assets/js/locker.js"></script>
+<script type="text/javascript" src="https://ogads.com/assets/js/locker.js"></script>
 
 </body>
 </html>
