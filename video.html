@@ -2,30 +2,43 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>شاهد الفيديو</title>
+  <title>فيديو حصري</title>
 
   <style>
     body {
-      font-family: Arial;
-      text-align: center;
-      background: #111;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
       color: #fff;
+      text-align: center;
     }
 
     .container {
-      margin-top: 50px;
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 20px;
+      background: #1c1c1c;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
-    .box {
-      background: #222;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
+    h1 {
+      color: #00ffcc;
+    }
+
+    p {
+      color: #ccc;
     }
 
     iframe {
-      margin-top: 15px;
+      margin-top: 20px;
       border-radius: 10px;
+    }
+
+    .warning {
+      margin-top: 15px;
+      color: #ff4d4d;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -33,18 +46,18 @@
 <body>
 
 <div class="container">
-  <div class="box">
-    <h2>🔥 فيديو حصري</h2>
-    <p>قم بخطوة بسيطة لفتح الفيديو</p>
+  <h1>🔥 فيديو حصري</h1>
+  <p>قم بإكمال خطوة بسيطة لفتح الفيديو</p>
 
-    <!-- الفيديو مخبي -->
-    <div id="video" style="display:none;">
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      frameborder="0" allowfullscreen>
-      </iframe>
-    </div>
+  <!-- الفيديو مخبي -->
+  <div id="video" style="display:none;">
+    <iframe width="100%" height="350"
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    frameborder="0" allowfullscreen>
+    </iframe>
   </div>
+
+  <p class="warning">⚠️ هذا الفيديو متاح لفترة محدودة</p>
 </div>
 
 <!-- OGAds Locker -->
@@ -53,7 +66,7 @@
   _ogads.push(['lock', 'YOUR_LOCKER_ID']);
 </script>
 
-<script type="text/javascript" src="https://ogads.com/assets/js/locker.js"></script>
+<script src="https://ogads.com/assets/js/locker.js"></script>
 
 </body>
 </html>
